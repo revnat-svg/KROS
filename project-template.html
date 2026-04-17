@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project — KROS Limited</title>
+  <meta name="description" content="Project case study — KROS Limited, London construction and consultancy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <style>
+    .project-hero-wrap {
+      position: relative;
+      overflow: hidden;
+      min-height: 55vh;
+      background: var(--navy);
+      display: flex;
+      align-items: flex-end;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="KROS Limited — Home">
+        <span>
+          <span class="nav__logo-text">KROS</span>
+          <span class="nav__logo-sub">Limited</span>
+        </span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="consultancy.html">Consultancy</a>
+        <a href="contact.html" class="btn btn--gold nav__cta">Get in Touch</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="consultancy.html">Consultancy</a>
+    <a href="contact.html">Get in Touch</a>
+  </div>
+
+  <main>
+
+    <!-- Hero — populated by JS -->
+    <div class="js-project-hero project-hero-wrap" style="padding-top:var(--nav-height);">
+      <div class="container" style="position:relative;z-index:1;padding-bottom:var(--spacing-lg);">
+        <div class="page-hero__eyebrow" style="opacity:0.6;">Loading…</div>
+      </div>
+    </div>
+
+    <!-- Stats bar — populated by JS -->
+    <div class="js-project-stats"></div>
+
+    <!-- Story content -->
+    <section class="section section--pale">
+      <div class="container">
+        <div style="margin-bottom:var(--spacing-sm);">
+          <a href="projects.html" class="arrow-link" style="font-size:0.8rem;color:var(--grey);">
+            ← Back to Projects
+          </a>
+        </div>
+        <div class="js-project-story">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery — populated by JS -->
+    <section class="section section--parchment">
+      <div class="container">
+        <div class="js-project-gallery">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA + Next project -->
+    <section class="section section--pale" style="padding-top:var(--spacing-md);">
+      <div class="container">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding:var(--spacing-md) 0;border-top:1px solid var(--mid);border-bottom:1px solid var(--mid);">
+          <div>
+            <p style="font-size:0.875rem;color:var(--grey);margin-bottom:0.5rem;">Have a similar project?</p>
+            <a href="contact.html" class="btn btn--navy">Get in Touch</a>
+          </div>
+          <div class="js-next-project">
+            <!-- Next project link — populated by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Image gallery">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" aria-label="Close gallery">×</button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Previous image">‹</button>
+      <img class="lightbox-img" src="" alt="">
+      <button class="lightbox-nav lightbox-next" aria-label="Next image">›</button>
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="nav__logo-text">KROS</span>
+          <span class="nav__logo-sub" style="display:block;margin-top:2px;">Limited</span>
+          <p>Construction · Civil Engineering · Project Management · Financial Consultancy. London-based. Est. 2009.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#construction">Construction &amp; Civil Engineering</a></li>
+            <li><a href="services.html#pm">Project Management</a></li>
+            <li><a href="consultancy.html">Financial Consultancy</a></li>
+            <li><a href="consultancy.html#investment">Property Investment</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About KROS</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="consultancy.html">Consultancy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <div class="footer__contact-item">
+            <span>Director</span>
+            <span>Savas Tuzunalper</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>Email</span>
+            <a href="mailto:savas@kros.co.uk">savas@kros.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <span>Base</span>
+            <span>North London, N14</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>Area</span>
+            <span>Greater London &amp; Home Counties</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 KROS Limited. Company Registration No. 06930945. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="contact.html">Privacy</a>
+          <a href="contact.html">Terms</a>
+          <a href="contact.html">Türkçe</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Back to top">↑</button>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script>
+</body>
+</html>

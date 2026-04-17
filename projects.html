@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — KROS Limited</title>
+  <meta name="description" content="KROS Limited project portfolio — commercial fit-outs, residential refurbishments, and civil engineering works across Greater London.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="KROS Limited — Home">
+        <span>
+          <span class="nav__logo-text">KROS</span>
+          <span class="nav__logo-sub">Limited</span>
+        </span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="consultancy.html">Consultancy</a>
+        <a href="contact.html" class="btn btn--gold nav__cta">Get in Touch</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="consultancy.html">Consultancy</a>
+    <a href="contact.html">Get in Touch</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="page-hero__eyebrow hero-animate">Portfolio</span>
+        <h1 class="hero-animate hero-animate--delay-1">Our Projects</h1>
+        <p class="lead hero-animate hero-animate--delay-2" style="max-width:540px;margin-top:var(--spacing-sm);">
+          Commercial fit-outs, residential refurbishments, civil works, and new builds — delivered across Greater London.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS GRID -->
+    <section class="section section--pale">
+      <div class="container">
+
+        <!-- Filter bar -->
+        <div class="filter-bar js-filter-bar" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="commercial">Commercial</button>
+          <button class="filter-btn" data-filter="residential">Residential</button>
+          <button class="filter-btn" data-filter="civil">Civil Engineering</button>
+        </div>
+
+        <!-- Grid — populated by projects.js -->
+        <div class="grid-3 js-projects-grid" role="list" aria-label="Project portfolio">
+          <!-- Projects injected by JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+      <div class="container">
+        <div>
+          <h2>Have a similar project in mind?</h2>
+          <p>Tell us what you are working on and we will respond within 24 hours.</p>
+        </div>
+        <a href="contact.html" class="btn btn--gold">Get in Touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="nav__logo-text">KROS</span>
+          <span class="nav__logo-sub" style="display:block;margin-top:2px;">Limited</span>
+          <p>Construction · Civil Engineering · Project Management · Financial Consultancy. London-based. Est. 2009.</p>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#construction">Construction &amp; Civil Engineering</a></li>
+            <li><a href="services.html#pm">Project Management</a></li>
+            <li><a href="consultancy.html">Financial Consultancy</a></li>
+            <li><a href="consultancy.html#investment">Property Investment</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About KROS</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="consultancy.html">Consultancy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Contact</h5>
+          <div class="footer__contact-item">
+            <span>Director</span>
+            <span>Savas Tuzunalper</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>Email</span>
+            <a href="mailto:savas@kros.co.uk">savas@kros.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <span>Base</span>
+            <span>North London, N14</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>Area</span>
+            <span>Greater London &amp; Home Counties</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 KROS Limited. Company Registration No. 06930945. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="contact.html">Privacy</a>
+          <a href="contact.html">Terms</a>
+          <a href="contact.html">Türkçe</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Back to top">↑</button>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
